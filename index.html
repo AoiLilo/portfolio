@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <title>Портфолио | Главная</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header">
+
+            <div class="header_logo">
+                <a href="#" class="header_logo_img">{aoi.lilo}</a>
+            </div>
+            <div class="header_links">
+                <a href="#" class="header_links_about links">Про меня</a>
+                <a href="#" class="header_links_services links">Услуги</a>
+                <a href="#" class="header_links_contacts links">Контакты</a>
+            </div>
+            <a href="#" class="menu_btn">
+                <span></span>
+            </a>
+        </header>
+
+        <div class="wrapper_main">
+            <div class="main_container">
+
+                <div class="main_container_info">
+                    <div class="main_container_info_text">
+                        <h1 class="main_container_info_text_title">Кто я такой?</h1>
+                        <h2 class="main_container_info_text_subtitle">Стариков Павел</h2>
+                        <p class="main_container_info_text_description">Здравствуйте! Я начинающий разработчик. Знаю js, html+css, учу React. На данной странице вы можете наблюдать мои реализованные проекты.</p>
+                        <div class="main_container_info_text_links">
+                            <a href="https://vk.com/aoililobeats" class="main_container_info_text_vk links_icons">
+                                <i class='bx bxl-vk'></i>
+                            </a>
+                            <a href="#" class="main_container_info_text_telegram links_icons">
+                                <i class='bx bxl-telegram'></i>
+                            </a>
+                            <a href="#" class="main_container_info_text_instagram links_icons">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="#" class="main_container_info_text_twitter links_icons">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </div>
+                        <button class="main_container_info_button">
+                            Связаться
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="hero_box">
+                    <img src="img/profile.png" alt="hero">
+                </div>
+            </div>
+            <a href="#next" class="slider_invite">
+                <i class='bx bxs-chevron-down slider_invite_arrow'></i>
+            </a>
+            <script src="scripts/InvArrow.js"></script>
+        </div>
+
+        <div class="wrapper_slider" id="next">
+            <div class="slider_text">
+                <h1 class="slider_text_style">Примеры работ</h1>
+            </div>
+            <div class="slider_container">
+                <div class="slider">
+                    <div class="item mediaPic">
+                        <img src="img/slider1.PNG" alt="Первый слайд">
+                    </div>
+                
+                    <div class="item mediaPic">
+                        <img src="img/slider2.PNG" alt="Второй слайд">
+                    </div>
+                
+                    <div class="item mediaPic">
+                        <img src="img/slider3.PNG" alt="Третий слайд">
+                    </div>
+                
+                    <a class="prev" onclick="minusSlide()">&#10094;</a>
+                    <a class="next" onclick="plusSlide()">&#10095;</a>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+            <script src="scripts/sim-slider.js"></script>
+        </div>
+
+        <div id="slider" class="slider_phone">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
+                <span class="slide"><img src="img/slider2.PNG" alt="Второй слайд"></span>
+                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
+                <span class="slide"><img src="img/slider2.PNG" alt="Второй слайд"></span>
+                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
+                ...
+              </div>
+            </div>
+            <a id="prev" class="control prev_ph"></a>
+            <a id="next" class="control next_ph"></a>
+          </div>
+
+        <div class="wrapper_description">
+            <div class="description_title"><h1 class="description_title_text">Специализация</h1></div>
+            <div class="description_container">
+                <div class="description_container_text">
+                    <h1 class="description_container_text_subtitle">.превращаю идеи в рабочие концепты</h1>
+                    <p class="description_container_text_paragraph">Полный цикл разработки, который включает в себя разработку дизайна сайта, лендинга, постановка на хостинг, а также внедрение "админ-панели", которая позволяет без исползования кодера вносить изменения в верстку.</p>
+                </div>
+                <div class="description_container_icons">
+                    <i class='bx bx-code-alt desc_icons open-popup' id="open" about="popupCode"></i>
+                    <i class='bx bxs-file-html desc_icons open-popup' id="open" about="popupLend"></i>
+                    <i class='bx bxs-user-pin desc_icons open-popup' id="open" about="popupPers"></i>
+                    <i class='bx bxs-file-js desc_icons open-popup' id="open" about="popupJs"></i>
+                    <i class='bx bxs-id-card desc_icons open-popup' id="open" about="popupKey"></i>
+                    <i class='bx bxs-lock-alt desc_icons open-popup' id="open" about="popupSecure"></i>
+                    <i class='bx bxs-calendar-check desc_icons open-popup' id="open" about="popupDeadline"></i>
+                    <i class='bx bxs-book-bookmark desc_icons open-popup' id="open" about="popupReadme"></i>
+                    <i class='bx bxs-envelope desc_icons open-popup' id="open" about="popupMessage"></i>
+                </div>
+                <div class="description_container_picture">
+                    <img src="../img/description_container_picture.PNG" alt="" class="description_container_picture_img">
+                </div>
+            </div>
+
+            <div class="popup_code_bg">
+                <div class="popup_code">
+                    <i class='bx bx-x close_popup'></i>
+                    <div class="popup_code_title_text_box"><h1 class="popup_code_title_text" id="title">Заголовок</h1></div>
+                    <p class="popup_code_text" id="text">Текст</p>
+                </div>
+            </div>
+
+            <script src="scripts/popupCode.js"></script>
+        </div>
+    </body>
+</html>
