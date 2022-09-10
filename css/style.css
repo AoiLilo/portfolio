@@ -87,6 +87,19 @@ img {
         width: 30vw;
     }
 
+    .menu {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .dropdown_item {
+        text-align: center;
+    }
+    .header_dropdown{
+        display: none;
+    }
 .wrapper_main {
     display: flex;
     flex-direction: column;
@@ -188,9 +201,6 @@ img {
     bottom: 1rem;
 
     animation: flashing_arrow 3s infinite alternate;
-}
-.slider_phone {
-    display: none;
 }
 @keyframes flashing_arrow {
     0% {
@@ -306,7 +316,7 @@ img {
 }
 
 .wrapper_description {
-    height: 100vh;
+    height: 90vh;
 
     background: linear-gradient(
         rgba(0, 0, 0, 0.918), 
@@ -475,6 +485,21 @@ img {
     display: none;
 }
 
+.wrapper_footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background: rgba(8, 8, 8, 0.938);
+}
+.footer_text {
+    color: rgb(92, 92, 92);
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1325px) {
     .main_container {
         max-width: 1300px;
@@ -507,6 +532,7 @@ img {
         width: 35px;
         height: 35px;
         position: relative;
+        z-index: 2;
     }
     .menu_btn span,
     .menu_btn span::before,
@@ -525,6 +551,65 @@ img {
     .menu_btn span::after {
         content: '';
         transform: translateY(6px);
+    }
+    /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+    .header_dropdown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+    }
+    
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown_content {
+        display: none;
+        background: rgba(0, 0, 0, 0.952);
+        width: 100%;
+        z-index: 0;
+    }
+    
+    /* Ссылки внутри выпадающего списка */
+    .dropdown_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        gap: 5em;
+        color: #fff;
+        font-weight: 500;
+        border: 2px solid #00be95;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-bottom: 21vh;
+        margin-top: 21vh;
+        width: 50vw;
+        background-color: #000000be;
+    }
+    .dropdown_content li {
+        list-style: none;
+    }
+    
+    /* Изменение цвета выпадающих ссылок при наведении курсора */
+    .dropdown_content a:hover {background-color: #00be956e}
+    
+    /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+    .show {
+        display: block;
+    }
+    .dropdown_content {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+    }
+    .dropdown_content.show.open {
+        opacity: 1;
+        pointer-events: all;
+        transition: all 0.5s;
     }
     .main_container {
         max-width: 950px;

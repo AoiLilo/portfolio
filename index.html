@@ -20,10 +20,19 @@
                 <a href="#" class="header_links_services links">Услуги</a>
                 <a href="#" class="header_links_contacts links">Контакты</a>
             </div>
-            <a href="#" class="menu_btn">
+            <a data-path="menu" class="menu_btn">
                 <span></span>
             </a>
+            
         </header>
+        <div class="header_dropdown">
+            <div data-target="menu" class="dropdown_content">
+              <li><a class="dropdown_item" href="#">Про меня</a></li>
+              <li><a class="dropdown_item" href="#">Услуги</a></li>
+              <li><a class="dropdown_item" href="#">Контакты</a></li>
+            </div>
+        </div>
+        <script src="scripts/dropdown.js"></script>
 
         <div class="wrapper_main">
             <div class="main_container">
@@ -37,13 +46,13 @@
                             <a href="https://vk.com/aoililobeats" class="main_container_info_text_vk links_icons">
                                 <i class='bx bxl-vk'></i>
                             </a>
-                            <a href="#" class="main_container_info_text_telegram links_icons">
+                            <a href="https://t.me/tvoikohai" class="main_container_info_text_telegram links_icons">
                                 <i class='bx bxl-telegram'></i>
                             </a>
-                            <a href="#" class="main_container_info_text_instagram links_icons">
+                            <a href="https://www.instagram.com/slowly.dancing.in.the.dark" class="main_container_info_text_instagram links_icons">
                                 <i class='bx bxl-instagram'></i>
                             </a>
-                            <a href="#" class="main_container_info_text_twitter links_icons">
+                            <a href="https://twitter.com/btwmenotyou?t=ODZPIt5r8VrElXZQ9OAbKg&s=09" class="main_container_info_text_twitter links_icons">
                                 <i class='bx bxl-twitter'></i>
                             </a>
                         </div>
@@ -95,21 +104,6 @@
             <script src="scripts/sim-slider.js"></script>
         </div>
 
-        <div id="slider" class="slider_phone">
-            <div class="wrapper">
-              <div id="items" class="items">
-                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
-                <span class="slide"><img src="img/slider2.PNG" alt="Второй слайд"></span>
-                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
-                <span class="slide"><img src="img/slider2.PNG" alt="Второй слайд"></span>
-                <span class="slide"><img src="img/slider1.PNG" alt="Первый слайд"></span>
-                ...
-              </div>
-            </div>
-            <a id="prev" class="control prev_ph"></a>
-            <a id="next" class="control next_ph"></a>
-          </div>
-
         <div class="wrapper_description">
             <div class="description_title"><h1 class="description_title_text">Специализация</h1></div>
             <div class="description_container">
@@ -142,6 +136,10 @@
             </div>
 
             <script src="scripts/popupCode.js"></script>
+        </div>
+
+        <div class="wrapper_footer">
+            <div class="footer_text">© Starikov Pavel</div>
         </div>
     </body>
 </html>
