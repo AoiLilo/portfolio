@@ -7,6 +7,7 @@
         <title>Портфолио | Главная</title>
         <link href="css/style.css" rel="stylesheet" />
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="img/craft_fox_origami_paper_creative_icon_226477.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -56,9 +57,20 @@
                                 <i class='bx bxl-twitter'></i>
                             </a>
                         </div>
-                        <button class="main_container_info_button">
+                        <button class="main_container_info_button open-popup_connect">
                             Связаться
                         </button>
+                        <div class="popup_connect_bg">
+                            <div class="popup_connect">
+                                <i class='bx bx-x close_popup'></i>
+                                <div class="popup_connect_text_phone"><h1>8-904-948-44-18</h1></div>
+                                <div class="popup_connect_text_email"><h2>btwmenotyou@gmail.com</h2></div>
+                                <div class="popup_connect_description_container">
+                                    <p>Время для звонков: 10:00 - 20:00. Время уральское.</p><p class="cur_date">Время:</p>
+                                </div>
+                            </div>
+                            <script src="scripts/popupConnect.js"></script>
+                        </div>
                     </div>
                     
                 </div>
@@ -104,7 +116,7 @@
             <script src="scripts/sim-slider.js"></script>
         </div>
 
-        <div class="wrapper_description">
+        <div class="wrapper_description" id="next2">
             <div class="description_title"><h1 class="description_title_text">Специализация</h1></div>
             <div class="description_container">
                 <div class="description_container_text">
@@ -123,7 +135,7 @@
                     <i class='bx bxs-envelope desc_icons open-popup' id="open" about="popupMessage"></i>
                 </div>
                 <div class="description_container_picture">
-                    <img src="../img/description_container_picture.PNG" alt="" class="description_container_picture_img">
+                    <img src="../img/container_picture.PNG" alt="" class="description_container_picture_img">
                 </div>
             </div>
 
